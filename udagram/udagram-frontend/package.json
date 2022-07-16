@@ -8,7 +8,7 @@
     "start": "ng serve",
     "build": "ng build",
     "clean": "rm -rf www/ || true",
-    "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",
+    "deploy": "npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
     "test": "ng test --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e"
