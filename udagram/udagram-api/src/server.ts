@@ -40,8 +40,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from './controllers/v0/model.index'
       ],
       methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
       preflightContinue: true,
-      origin:
-        'http://udagram-bucket1234.s3-website.me-south-1.amazonaws.com/**',
+      origin: '*',
     })
   )
 
