@@ -57,6 +57,10 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+        name: Settin Up ENVs Variables With eb-cli
+        command: |
+          eb setenv AWS_BUCKET=AWS_BUCKET AWS_PROFILE=AWS_PROFILE DB_PORT=DB_PORT JWT_SECRET=JWT_SECRET PORT=PORT POSTGRES_DB=POSTGRES_DB POSTGRES_HOST=POSTGRES_HOST POSTGRES_PASSWORD=POSTGRES_PASSWORD POSTGRES_USERNAME=POSTGRES_USERNAME URL=URL
+      - run:
           name: Deploy API
           # TODO: Install, build, deploy back-end
           command: |
