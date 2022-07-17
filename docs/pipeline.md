@@ -12,7 +12,7 @@ The jobs and workflows are defined in **config.yml** file.
 
 2. In the **build** process the environment is prepared, Node and other dependencies are installed and the build scripts are executed. In case of an error the pipeline is stopped and the error shown. If all is successful the app is production ready.
 
-![build](/documantion/shots/build.png)
+![build](/docs/shots/build.png)
 
 3. In the **hold** process the approval is needed. Once approved the pipeline is moving to the deployment process.
 
